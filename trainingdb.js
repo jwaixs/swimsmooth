@@ -472,20 +472,6 @@ trainingdb.insert([
     "swimmer" : "kicktastic",
     "trainingpart" : "build",
     "slogan" : "A throw back to your days in swim squad.",
-    "training" : "8x50m Rolling Wissel var., 2x set: <br>" +
-      "25 fly + 25 back <br>" +
-      "25 back + 25 breast <br>" +
-      "25 breast + 25 free <br>" +
-      "25 free + 25 fly<br>" +
-      "25 back + 25 breast <br>",
-    "speed" : "advanced",
-    "pool" : "25m",
-    "distance" : 450
-  },
-  {
-    "swimmer" : "kicktastic",
-    "trainingpart" : "build",
-    "slogan" : "A throw back to your days in swim squad.",
     "training" : "4x50m + R15s, <br>" +
       "25m fly + 25m back <br>" +
       "25m back + 25m breast <br>" +
@@ -500,7 +486,7 @@ trainingdb.insert([
     "trainingpart" : "build",
     "slogan" : "A throw back to your days in swim squad.",
     "training" : "4x50m + R15s,<br>50m fly<br>50m back<br>50m breast<br>50m free.",
-    "speed" : "advanced",
+    "speed" : "novice",
     "pool" : "50m",
     "distance" : 200
   },
@@ -513,7 +499,7 @@ trainingdb.insert([
       "25m back + 25m breast <br>" +
       "25m breast + 25m free <br>" +
       "25m free + 25m fly<br>",
-    "speed" : "advanced",
+    "speed" : "intermediate",
     "pool" : "25m",
     "distance" : 400
   },
@@ -522,7 +508,7 @@ trainingdb.insert([
     "trainingpart" : "build",
     "slogan" : "A throw back to your days in swim squad.",
     "training" : "2 sets: 4x50m + R15s,<br>50m fly<br>50m back<br>50m breast<br>50m free.",
-    "speed" : "advanced",
+    "speed" : "intermediate",
     "pool" : "50m",
     "distance" : 400
   },
@@ -1276,7 +1262,7 @@ trainingdb.insert([
     "slogan" : "Focus on toes pointed and turned in on technnique set - long, straight legs.",
     "training" : "8x75m + R10s, where 25m pull buoy 25m kick (use pullb as kick board) 25m pull buoy<br>" +
       "8x75m + R10s, where 25m breathing 3s, 25m breathing 5s, 25m breathing to least favourite side.",
-    "speed" : "intermidiate",
+    "speed" : "intermediate",
     "pool" : "25m",
     "distance" : 1200
   },
@@ -1287,7 +1273,7 @@ trainingdb.insert([
     "slogan" : "Focus on toes pointed and turned in on technnique set - long, straight legs.",
     "training" : "6x100m + R10s, where 50m pull buoy 50m kick (use pullb as kick board)<br>" +
       "6x100m + R10s, where 25m breathing 3s, 25m breathing 5s, 50m breathing to least favourite side.",
-    "speed" : "intermidiate",
+    "speed" : "intermediate",
     "pool" : "50m",
     "distance" : 1200
   },
@@ -1774,6 +1760,20 @@ trainingdb.insert([
       "3e Basic Stroke Rate -5 SPM<br>" +
       "4e Basic Stroke Rate +3 SPM",
     "speed" : "advanced",
+    "pool" : "25m",
+    "distance" : 1000
+  },
+  {
+    "swimmer" : "swinger",
+    "trainingpart" : "main",
+    "focus" : "technique",
+    "slogan" : "To gradually elevate your speed and rhythm in readiness for main set.",
+    "training" : "4x250m +R20s Focus on stoke rate<br>" +
+      "1e Basic Stroke Rate<br>" +
+      "2e Basic Stroke Rate +5 SPM<br>" +
+      "3e Basic Stroke Rate -5 SPM<br>" +
+      "4e Basic Stroke Rate +3 SPM",
+    "speed" : "advanced",
     "pool" : "50m",
     "distance" : 1000
   },
@@ -1783,6 +1783,18 @@ trainingdb.insert([
     "focus" : "threshold",
     "slogan" : "Long set don't go out to fast, hold you pace.",
     "training" : "8x300 @css +r40s or 2 beeps, 1,2,3 & 5,6,7 = f/s, 4, 8 = Pull and Paddles.",
+    "speed" : "advanced",
+    "pool" : "25m",
+    "distance" : 2400
+  },
+  {
+    "swimmer" : "swinger",
+    "trainingpart" : "main",
+    "focus" : "threshold",
+    "slogan" : "Long set don't go out to fast, hold you pace.",
+    "training" : "8x300 @css +r40s or 2 beeps, 1,2,3 & 5,6,7 = f/s, 4, 8 = Pull and Paddles.",
+    "speed" : "advanced",
+    "pool" : "50m",
     "distance" : 2400
   },
   {
@@ -1791,6 +1803,18 @@ trainingdb.insert([
     "focus" : "sprint",
     "slogan" : "Where do you feel most rhythmical and powerful in your stroke?",
     "training" : "30x50m R15s, 5x 50m @ base Rate Stroke Rate every 5 add + 3SPM",
+    "speed" : "advanced",
+    "pool" : "25m",
+    "distance" : 1500
+  },
+  {
+    "swimmer" : "swinger",
+    "trainingpart" : "main",
+    "focus" : "sprint",
+    "slogan" : "Where do you feel most rhythmical and powerful in your stroke?",
+    "training" : "30x50m R15s, 5x 50m @ base Rate Stroke Rate every 5 add + 3SPM",
+    "speed" : "advanced",
+    "pool" : "50m",
     "distance" : 1500
   },
   {
@@ -1802,6 +1826,21 @@ trainingdb.insert([
       "8x50m = 4 @ base stroke rate +12 SPM , 4 @ base stroke rate -12 SPM<br>" +
       "8x50m = 4 @ base stroke rate +8 SPM , 4 @ base stroke rate -8 SPM<br>" +
       "8x50m = 4 @ base stroke rate +4 SPM , 4 @ base stroke rate -4 SPM",
+    "speed" : "advanced",
+    "pool" : "25m",
+    "distance" : 2400
+  },
+  {
+    "swimmer" : "swinger",
+    "trainingpart" : "main",
+    "focus" : "openwater",
+    "slogan" : "Funnel your stroke rate to an optimale point, good for OW swimming.",
+    "training" : "24x50m +R10s:<br>" +
+      "8x50m = 4 @ base stroke rate +12 SPM , 4 @ base stroke rate -12 SPM<br>" +
+      "8x50m = 4 @ base stroke rate +8 SPM , 4 @ base stroke rate -8 SPM<br>" +
+      "8x50m = 4 @ base stroke rate +4 SPM , 4 @ base stroke rate -4 SPM",
+    "speed" : "advanced",
+    "pool" : "50m",
     "distance" : 2400
   },
   {
@@ -1813,7 +1852,22 @@ trainingdb.insert([
       "1e set: fins-drill= shoulder tap<br>" +
       "2e set: Pull-drill= doggy paddle<br>" +
       "3e set: fins-drill= broken arrow",
-    "distance" : 400
+    "speed" : "advanced",
+    "pool" : "25m",
+    "distance" : 1500
+  },
+  {
+    "swimmer" : "smooth",
+    "trainingpart" : "main",
+    "focus" : "technique",
+    "slogan" : "A great set where time will fly with a simple focus on your stroke.",
+    "training" : "3x500m + R30s<br>" + 
+      "1e set: fins-drill= shoulder tap<br>" +
+      "2e set: Pull-drill= doggy paddle<br>" +
+      "3e set: fins-drill= broken arrow",
+    "speed" : "advanced",
+    "pool" : "50m",
+    "distance" : 1500
   },
   {
     "swimmer" : "smooth",
@@ -1825,6 +1879,22 @@ trainingdb.insert([
       "12x50m sprint every 3th, starttime = CSS+10s per 50m<br>" +
       "8x50m sprint every 2th, starttime = CSS+15s per 50m<br>" +
       "4x50m sprint every 1th, starttime = CSS+20s per 50m",
+    "speed" : "advanced",
+    "pool" : "25m",
+    "distance" : 2000
+  },
+  {
+    "swimmer" : "smooth",
+    "trainingpart" : "main",
+    "focus" : "threshold",
+    "slogan" : "Speed & endurance.",
+    "training" : "40x50m Spike set:<br>" +
+      "16x50m sprint every 4th, starttime = CSS+5s per 50m<br>" +
+      "12x50m sprint every 3th, starttime = CSS+10s per 50m<br>" +
+      "8x50m sprint every 2th, starttime = CSS+15s per 50m<br>" +
+      "4x50m sprint every 1th, starttime = CSS+20s per 50m",
+    "speed" : "advanced",
+    "pool" : "50m",
     "distance" : 2000
   },
   {
@@ -1833,6 +1903,18 @@ trainingdb.insert([
     "focus" : "sprint",
     "slogan" : "Tough sesion for experienced smooths.",
     "training" : "2x (3x200m R45s best pace, 4x50m R55-50-45-40s @  Max! SP R60s.",
+    "speed" : "advanced",
+    "pool" : "25m",
+    "distance" : 1600
+  },
+  {
+    "swimmer" : "smooth",
+    "trainingpart" : "main",
+    "focus" : "sprint",
+    "slogan" : "Tough sesion for experienced smooths.",
+    "training" : "2x (3x200m R45s best pace, 4x50m R55-50-45-40s @  Max! SP R60s.",
+    "speed" : "advanced",
+    "pool" : "50m",
     "distance" : 1600
   },
   {
@@ -1841,6 +1923,18 @@ trainingdb.insert([
     "focus" : "openwater",
     "slogan" : "Keep pace high and recovery short to simulate a 1500m swim.",
     "training" : "10x150m Race Simulation (2-4 swimmers) fast effort, with climb out and walk to other end of the pool to start the interval. Diffent leader per 150m who is trying to drop the swimmer behind.",
+    "speed" : "advanced",
+    "pool" : "25m",
+    "distance" : 1500
+  },
+  {
+    "swimmer" : "smooth",
+    "trainingpart" : "main",
+    "focus" : "openwater",
+    "slogan" : "Keep pace high and recovery short to simulate a 1500m swim.",
+    "training" : "10x150m Race Simulation (2-4 swimmers) fast effort, with climb out and walk to other end of the pool to start the interval. Diffent leader per 150m who is trying to drop the swimmer behind.",
+    "speed" : "advanced",
+    "pool" : "50m",
     "distance" : 1500
   }
 ]);
@@ -1900,23 +1994,75 @@ trainingdb.insert([
     "focus" : "endurance",
     "slogan" : "Beat the Beep! to gain rest between intervals. Pace is key.",
     "training" : "Start time= CSS op 100m /2 +5s<br>" +
+      "10x50m<br>" +
+      "5x100m<br>" +
+      "3x200m<br>" +
+      "1x500m",
+    "speed" : "novice",
+    "distance" : 2100
+  },
+  {
+    "swimmer" : "arnie",
+    "focus" : "endurance",
+    "slogan" : "Beat the Beep! to gain rest between intervals. Pace is key.",
+    "training" : "Start time= CSS op 100m /2 +5s<br>" +
       "20x50m<br>" +
       "10x100m<br>" +
       "5x200m<br>" +
       "2x500m",
+    "speed" : "intermediate",
+    "distance" : 4000
+  },
+  {
+    "swimmer" : "arnie",
+    "focus" : "endurance",
+    "slogan" : "Beat the Beep! to gain rest between intervals. Pace is key.",
+    "training" : "Start time= CSS op 100m /2 +5s<br>" +
+      "20x50m<br>" +
+      "10x100m<br>" +
+      "5x200m<br>" +
+      "2x500m",
+    "speed" : "advanced",
     "distance" : 4000
   },
   {
     "swimmer" : "bambino",
     "focus" : "endurance",
     "slogan" : "Basic endurance swim.",
-    "training" : "5x500m +R60s<br>" +
+    "training" : "5x500m + R60s<br>" +
       "1e Steady f/s @CSS +6s per 100m<br>" +
       "2e fins as very steady swim. Keep stroke long and smooth<br>" +
       "3e Steady f/s @CSS +4s per 100m<br>" +
       "4e pullb breathing 3/2/3/2...<br>" +
       "5e Steady f/s @CSS +2s per 100m",
+    "speed" : "novice",
     "distance" : 2500
+  },
+  {
+    "swimmer" : "bambino",
+    "focus" : "endurance",
+    "slogan" : "Basic endurance swim.",
+    "training" : "7x500m + R60s<br>" +
+      "1e Steady f/s @CSS +6s per 100m<br>" +
+      "2e fins as very steady swim. Keep stroke long and smooth<br>" +
+      "3e Steady f/s @CSS +4s per 100m<br>" +
+      "4e pullb breathing 3/2/3/2...<br>" +
+      "5e Steady f/s @CSS +2s per 100m",
+    "speed" : "intermediate",
+    "distance" : 3500
+  },
+  {
+    "swimmer" : "bambino",
+    "focus" : "endurance",
+    "slogan" : "Basic endurance swim.",
+    "training" : "9x500m + R60s<br>" +
+      "1e Steady f/s @CSS +6s per 100m<br>" +
+      "2e fins as very steady swim. Keep stroke long and smooth<br>" +
+      "3e Steady f/s @CSS +4s per 100m<br>" +
+      "4e pullb breathing 3/2/3/2...<br>" +
+      "5e Steady f/s @CSS +2s per 100m",
+    "speed" : "advanced",
+    "distance" : 4500
   },
   {
     "swimmer" : "kicktastic",
@@ -1928,13 +2074,57 @@ trainingdb.insert([
       "3x400m B<br>" +
       "6x50m A<br>" +
       "3x500m B",
+    "speed" : "novice",
+    "distance" : 5000
+  },
+  {
+    "swimmer" : "kicktastic",
+    "focus" : "endurance",
+    "slogan" : "Stay with the beeper on A set but get as far in front of the beep on B set.",
+    "training" : "3x200m A A= @CSS +5s +R30s<br>" +
+      "3x300mB B = starttime @CSS +10s  BEAT THE BEEP<br>" +
+      "5x100m A<br>" +
+      "3x400m B<br>" +
+      "6x50m A<br>" +
+      "3x500m B",
+    "speed" : "intermediate",
+    "distance" : 5000
+  },
+  {
+    "swimmer" : "kicktastic",
+    "focus" : "endurance",
+    "slogan" : "Stay with the beeper on A set but get as far in front of the beep on B set.",
+    "training" : "3x200m A A= @CSS +5s +R30s<br>" +
+      "3x300mB B = starttime @CSS +10s  BEAT THE BEEP<br>" +
+      "5x100m A<br>" +
+      "3x400m B<br>" +
+      "6x50m A<br>" +
+      "3x500m B",
+    "speed" : "advanced",
     "distance" : 5000
   },
   {
     "swimmer" : "overglider",
     "focus" : "endurance",
     "slogan" : "stay focus on pacing and be patient.",
-    "training" : "2x (100  200 300 400 500 400 D 300 D 200 D 100 D) R30s @ CSS + 6s per 100m,  D (decending) @ CSS +3s per100m.",
+    "training" : "100m 200m 300m 400m 500m 400m D 300m D 200m D 100m D + R30s @ CSS + 6s per 100m,  D (decending) @ CSS +3s per100m.",
+    "speed" : "novice",
+    "distance" : 2500
+  },
+  {
+    "swimmer" : "overglider",
+    "focus" : "endurance",
+    "slogan" : "Stay focus on pacing and be patient.",
+    "training" : "2 x (100m 200m 300m 400m 500m 400m D 300m D 200m D 100m D) + R30s @ CSS + 6s per 100m,  D (decending) @ CSS +3s per100m.",
+    "speed" : "intermediate",
+    "distance" : 5000
+  },
+  {
+    "swimmer" : "overglider",
+    "focus" : "endurance",
+    "slogan" : "Stay focus on pacing and be patient.",
+    "training" : "2 x (100m 200m 300m 400m 500m 400m D 300m D 200m D 100m D) + R30s @ CSS + 6s per 100m,  D (decending) @ CSS +3s per100m.",
+    "speed" : "advanced",
     "distance" : 5000
   },
   {
@@ -1945,6 +2135,7 @@ trainingdb.insert([
       "500m @CSS +9s per 100m +R60s<br>" +
       "1000m @CSS +6s per 100m +R60s<br>" +
       "1500m @CSS +3S per 100m +R60s.",
+    "speed" : "advanced",
     "distance" : 6000
   },
   {
@@ -1956,6 +2147,7 @@ trainingdb.insert([
       "1x300m BEAT THE BEEPER! Starttime CSS +10s per 100m  BEAT THE BEEPER!<br>" +
       "1x500m BEAT THE BEEPER! Starttime CSS +10s per 100m  BEAT THE BEEPER!<br>" +
       "1x700m BEAT THE BEEPER! Starttime CSS +10s per 100m  BEAT THE BEEPER!",
+    "speed" : "advanced",
     "distance" : 5400
   }
 ]);

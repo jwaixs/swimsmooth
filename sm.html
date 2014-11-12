@@ -21,7 +21,11 @@ $(document).ready(function() {
 
     $('#trainingTextBox').fadeOut('slow');
     $('#trainingTextBox').promise().done(function() {
-      $('#trainingTextBox').html(training[0] + '<p id="totaldistance">Total distance: ' + training[1] + '.</p>');
+      if (training[1] != 0) {
+        $('#trainingTextBox').html(training[0] + '<p id="totaldistance">Total distance: ' + training[1] + '.</p>');
+      } else {
+        $('#trainingTextBox').html(training[0]);
+      }
       $('#trainingTextBox').fadeIn('slow');
     });
   });
@@ -33,20 +37,29 @@ function generateTraining(swimType, swimTraining, swimSpeed, swimPool) {
   var swimTypes = ['arnie', 'bambino', 'kicktastic', 'overglider', 'swinger', 'smooth'];
   var swimTrainings = ['technique', 'threshold', 'sprint', 'openwater', 'endurance'];
 
+  if ((swimType == 'swinger' || swimType == 'smooth') 
+        && (swimSpeed == 'novice' || swimSpeed == 'intermediate')) {
+    return ['Your critical swim speed is to slow for this training.', 0];
+  }
+
   if (swimTraining == 'random') {
-    var swimTraining = swimTrainings[Math.floor(Math.random() * 4)];
+    var swimTraining = swimTrainings[Math.floor(Math.random() * 5)];
   } 
   
   /* Is Endurance training? */
   if (swimTraining == 'endurance') {
     if (swimType == 'random') {
       /* Random generator */
-      var ss = swimTypes[Math.floor(Math.random() * 6)];
+      if (swimSpeed == 'advanced') {
+        var ss = swimTypes[Math.floor(Math.random() * 6)];
+      } else {
+        var ss = swimTypes[Math.floor(Math.random() * 4)];
+      }
     } else {
       var ss = swimType;
     }
 
-    var endurancetraining = trainingdb({swimmer : ss, focus : swimTraining}).first();
+    var endurancetraining = trainingdb({swimmer : ss, focus : swimTraining, speed : swimSpeed}).first();
  
     console.log('Endurance: ' + ss);
  
@@ -62,7 +75,11 @@ function generateTraining(swimType, swimTraining, swimSpeed, swimPool) {
   /* Warming up */
   if (swimType == 'random') {
     /* Random generator */
-    var wuptr = swimTypes[Math.floor(Math.random() * 6)];
+    if (swimSpeed == 'advanced') {
+      var wuptr = swimTypes[Math.floor(Math.random() * 6)];
+    } else {
+      var wuptr = swimTypes[Math.floor(Math.random() * 4)];
+    }
   } else {
     var wuptr = swimType;
   }
@@ -81,7 +98,11 @@ function generateTraining(swimType, swimTraining, swimSpeed, swimPool) {
   /* Build set */
   if (swimType == 'random') {
     /* Random generator */
-    var buildtr = swimTypes[Math.floor(Math.random() * 6)];
+    if (swimSpeed == 'advanced') {
+      var buildtr = swimTypes[Math.floor(Math.random() * 6)];
+    } else {
+      var buildtr = swimTypes[Math.floor(Math.random() * 4)];
+    }
   } else {
     var buildtr = swimType;
   }
@@ -101,7 +122,11 @@ function generateTraining(swimType, swimTraining, swimSpeed, swimPool) {
   /* Main set */ 
   if (swimType == 'random') {
     /* Random generator */
-    var maintr = swimTypes[Math.floor(Math.random() * 5)];
+    if (swimSpeed == 'advanced') {
+      var maintr = swimTypes[Math.floor(Math.random() * 6)];
+    } else {
+      var maintr = swimTypes[Math.floor(Math.random() * 4)];
+    }
   } else {
     var maintr = swimType;
   }
@@ -121,7 +146,11 @@ function generateTraining(swimType, swimTraining, swimSpeed, swimPool) {
   /* Cooling down */ 
   if (swimType == 'random') {
     /* Random generator */
-    var cdtr = swimTypes[Math.floor(Math.random() * 6)];
+    if (swimSpeed == 'advanced') {
+      var cdtr = swimTypes[Math.floor(Math.random() * 6)];
+    } else {
+      var cdtr = swimTypes[Math.floor(Math.random() * 4)];
+    }
   } else {
     var cdtr = swimType;
   }
